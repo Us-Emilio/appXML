@@ -30,27 +30,6 @@ public class CSV {
      * @throws DadesException
      */
     public static void exportaEquipsACSV(File fitx, Equips dades) throws DadesException {
-        /*try {
-            if (!fitx.exists()) {
-                fitx.createNewFile();
-            }
-        } catch (IOException ex) {
-            throw new DadesException("No se ha podido crear el archivo.");
-        }
-
-        ArrayList<Equip> equips = dades.getEquips();
-        try {
-            FileWriter texto = new FileWriter(fitx);
-            BufferedWriter escritor = new BufferedWriter(texto);
-
-            for (Equip equip : equips) {
-                System.out.println(equip.toString());
-                escritor.write("hola");
-                escritor.newLine();
-            }
-        } catch (IOException ex) {
-            throw new DadesException("No se pudo escrivir en el fichero");
-        }*/
         
         try {
             if (!fitx.exists()) {
@@ -67,7 +46,6 @@ public class CSV {
             BufferedWriter escritor = new BufferedWriter(texto);
 
             for (Equip equip : equips) {
-                    System.out.println(equip.toString());
                     escritor.write(equip.toString());
                     escritor.newLine();
             }
@@ -104,7 +82,6 @@ public class CSV {
             for (Equip equip : equips) {
                 jugadors = equip.getJugadors();
                 for (Jugador jugador : jugadors) {
-                    System.out.println(jugador.toString());
                     escritor.write(jugador.toString());
                     escritor.newLine();
                 }

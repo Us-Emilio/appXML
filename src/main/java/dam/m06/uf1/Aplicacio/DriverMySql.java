@@ -18,7 +18,7 @@ public class DriverMySql {
     // Per seguretat aquestes dades s'haurien de llegir d'un fitxer xifrat o similar
     String bd = "lliga_futbol";
     String usuari = "root";
-    String password = "";
+    String password = "1234";
     
     Connection conn = null;
 
