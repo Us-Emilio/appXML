@@ -5,11 +5,14 @@
  */
 package dam.m06.uf1.Aplicacio.Model;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author manel
  */
-
+@XmlRootElement
 public class Jugador {
     
     private Integer id;
@@ -31,6 +34,7 @@ public class Jugador {
         this.cp = cp;
     }
 
+    @XmlAttribute(name = "id")
     public Integer getId() {
         return id;
     }

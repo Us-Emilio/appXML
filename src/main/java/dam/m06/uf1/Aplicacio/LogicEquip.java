@@ -15,6 +15,8 @@ import dam.m06.uf1.Dades.XML;
 import dam.m06.uf1.Dades.JugadorsBD;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author manel
@@ -156,12 +158,18 @@ public class LogicEquip {
      */
     public static Equips carregaDadesDeXML(File fitxer) throws AplicacioException
     {
-        Equips ret = new Equips();
-        
-        if (true)
-            throw new AplicacioException("No implementat");
-        
-        return ret;
+        try {
+            Equips ret = new Equips();
+           
+            ret=XML.carregaDadesDeXML(fitxer);
+            
+           // if (true)
+             //   throw new AplicacioException("No implementat");
+            
+            return ret;
+        } catch (DadesException ex) {
+              throw new AplicacioException("No implementat");
+        }
     }
     
     /**

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Equips>
+    <Equip id="1">
+        <cp>29680</cp>
+        <estadio>Alboran</estadio>
+        <jugadors id="1">
+            <cp>12345</cp>
+            <dorsal>1</dorsal>
+            <edad>22</edad>
+            <idEquip>1</idEquip>
+            <nombre>Pepe</nombre>
+        </jugadors>
+        <nombre>ESTEPONA</nombre>
+        <poblacion>ESTEPONA</poblacion>
+        <provincia>MÁLAGA</provincia>
+    </Equip>
+    <Equip id="2">
+        <cp>18924</cp>
+        <estadio>SANTO DOMINGO</estadio>
+        <jugadors id="2">
+            <cp>12345</cp>
+            <dorsal>1</dorsal>
+            <edad>24</edad>
+            <idEquip>2</idEquip>
+            <nombre>Pepi</nombre>
+        </jugadors>
+        <nombre>ALCORCÓN</nombre>
+        <poblacion>ALCORCÓN</poblacion>
+        <provincia>MADRID</provincia>
+    </Equip>
+    <Equip id="3">
+        <cp>23790</cp>
+        <estadio>SAN CRISTOBAL</estadio>
+        <jugadors id="3">
+            <cp>12345</cp>
+            <dorsal>3</dorsal>
+            <edad>25</edad>
+            <idEquip>3</idEquip>
+            <nombre>Pepo</nombre>
+        </jugadors>
+        <nombre>PORCUNA</nombre>
+        <poblacion>PORCUNA</poblacion>
+        <provincia>JAEN</provincia>
+    </Equip>
+    <Equip id="1">
+        <cp>08001</cp>
+        <estadio>Nou Camp</estadio>
+        <jugadors id="1">
+            <cp>08876</cp>
+            <dorsal>8</dorsal>
+            <edad>23</edad>
+            <idEquip>1</idEquip>
+            <nombre>Gerard Piqué</nombre>
+        </jugadors>
+        <jugadors id="2">
+            <cp>08765</cp>
+            <dorsal>11</dorsal>
+            <edad>29</edad>
+            <idEquip>1</idEquip>
+            <nombre>Shakira</nombre>
+        </jugadors>
+        <nombre>Barça</nombre>
+        <poblacion>Barcelona</poblacion>
+        <provincia>Barcelona</provincia>
+    </Equip>
+    <Equip id="2">
+        <cp>08765</cp>
+        <estadio>Bernabeu</estadio>
+        <jugadors id="3">
+            <cp>28765</cp>
+            <dorsal>2</dorsal>
+            <edad>22</edad>
+            <idEquip>2</idEquip>
+            <nombre>Pepito</nombre>
+        </jugadors>
+        <nombre>Real Madrid</nombre>
+        <poblacion>Madrid</poblacion>
+        <provincia>Madrid</provincia>
+    </Equip>
+    <Equip id="3">
+        <cp>33456</cp>
+        <estadio>Mestalla</estadio>
+        <nombre>CF Valencia</nombre>
+        <poblacion>Valencia</poblacion>
+        <provincia>Valencia</provincia>
+    </Equip>
+</Equips>
