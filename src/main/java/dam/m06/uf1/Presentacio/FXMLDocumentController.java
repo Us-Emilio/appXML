@@ -468,7 +468,7 @@ public class FXMLDocumentController implements Initializable {
                         fitx.flush();
                         fitx.close();
 
-                        mostrarAlertaError("S'han produït errors d'importació. Fitxer d'errors a " + temp.getAbsolutePath());
+                      //  mostrarAlertaError("S'han produït errors d'importació. Fitxer d'errors a " + temp.getAbsolutePath());
 
                     } catch (IOException ex) {
                         mostrarAlertaError("No s'ha pogut generar el fitxer d'errors");

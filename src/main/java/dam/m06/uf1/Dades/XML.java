@@ -5,8 +5,10 @@
  */
 package dam.m06.uf1.Dades;
 
+import dam.m06.uf1.Aplicacio.AplicacioException;
 import dam.m06.uf1.Aplicacio.LogicEquip;
 import dam.m06.uf1.Aplicacio.LogicJugador;
+import static dam.m06.uf1.Aplicacio.LogicJugador.verificaReglesNegoci;
 import dam.m06.uf1.Aplicacio.Model.Equip;
 import dam.m06.uf1.Aplicacio.Model.Equips;
 import dam.m06.uf1.Aplicacio.Model.Jugador;
@@ -53,46 +55,24 @@ public class XML {
      */
     public static Equips carregaDadesDeXML(File fitx) throws DadesException
     {
+          Equips ret = new Equips();
         try {
-            Equips ret = new Equips();
-            
-            
-        // JAXBContext context=JAXBContext.newInstance(Equips.class);//el contexto es la clase libreira
-            
-            //Objeto que permita leer el xml, pasar de xml a java
-          //  Unmarshaller unmarshaller=context.createUnmarshaller();//permite leer el xml
-            
-            //devuelve el objeto con toda la información, devuelve libreria.
-          //  Equips libreria= (Equips) unmarshaller.unmarshal(new File("futbol.xml"));//Hacemos Cast porque unmarshall devuelve Object
-            
-            //Muestra los datos del objeto
-            
-            // System.out.println(libreria.);
-            
-         //   ArrayList<Equip>libros=libreria.getEquips();
-            //recorremos el ArrayList
-          //  for(Equip e:libros){
-            //    System.out.println(e.getEstadio());
-          //  }
-          
-        //  fitx = new File("bookstore.xml");
-          //  context = JAXBContext.newInstance(BookStore.class);
-         //   Unmarshaller unmarshaller = context.createUnmarshaller();
-         //   ret = (Equips) unmarshaller.unmarshal(fitx);
-            
 
             
-          //  fitxer = new File(fitx);
             JAXBContext  context = JAXBContext.newInstance(Equips.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             ret = (Equips) unmarshaller.unmarshal(fitx);
 
-             
-            //if (true) throw new DadesException ("No implementat");
-            
-            return ret;
+              
+                 
+                 
+           
+        
+
         } catch (JAXBException ex) {
             throw new DadesException (ex.getMessage());
-        }
+     
+        } 
+         return ret;
     }
 }
