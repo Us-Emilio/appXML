@@ -46,7 +46,8 @@ public class CSV {
             BufferedWriter escritor = new BufferedWriter(texto);
 
             for (Equip equip : equips) {
-                    escritor.write(equip.toString());
+                    escritor.write(equip.getId() + ", " + equip.getNombre() + ", " + equip.getEstadio() + ", " 
+                            + equip.getPoblacion() + ", " + equip.getProvincia() + ", " + equip.getCp());
                     escritor.newLine();
             }
             escritor.close();
@@ -82,7 +83,8 @@ public class CSV {
             for (Equip equip : equips) {
                 jugadors = equip.getJugadors();
                 for (Jugador jugador : jugadors) {
-                    escritor.write(jugador.toString());
+                    escritor.write(jugador.getId() + ", " + jugador.getIdEquip() + ", " + jugador.getNombre() + ", "
+                            + jugador.getDorsal() + ", " + jugador.getEdad() + ", " + jugador.getCp());
                     escritor.newLine();
                 }
             }
